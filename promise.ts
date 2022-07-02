@@ -1,3 +1,7 @@
+const async = require("async");
+
+
+
 const promise = new Promise(function(resolve,reject){
 const string1 = "Sanjeev"
 const string2 = "Sanjeev";
@@ -44,9 +48,35 @@ let executionlistofFunction2 = async(listofFunction) =>{
 
 }
 
+function square(x){
+	(resolve)=>{
+		setTimeout(()=>{
+			resolve(Math.pow(x,2))
+		},2000)
+	}
+}
 
+async function output(x){
+	const ans = await square(x);
+	console.log(ans)
+}
 
+output(10);
 
+/********/
+function add(x,y){
+	resolve =>{
+		setTimeout(()=>{
+			resolve(x+y)
+		},2000)
+	}
+}
+
+async function sum(x,y){
+	const sum = await add(x,y)
+}
+
+add(10,20)
 
 
 
