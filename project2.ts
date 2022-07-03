@@ -1,4 +1,4 @@
-const moongoose = require ('moongoose')
+import moongoose from 'moongoose';
 const DB = 'mongodb://localhost:27017/GFG'
 moongoose.connect(DB,{
 	useNewUrlParser: true,

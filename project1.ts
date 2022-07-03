@@ -1,7 +1,7 @@
 import { error } from "console";
 
-const express = require('express');
-const moongoose = require('moongoose');
+import express from 'express'
+import moongoose from 'moongoose'
 const port = 3000;
 const app = express();
 

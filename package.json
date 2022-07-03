@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,10 +19,12 @@
     "express": "^4.18.1",
     "express-validator": "^6.14.2",
     "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "mongodb": "^4.7.0",
     "moongoose": "0.0.5",
     "nodemon": "^2.0.18",
+    "sendgrid": "^5.2.3",
     "typescript": "^4.7.4",
     "underscore": "^1.13.4"
   }
