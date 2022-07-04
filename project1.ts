@@ -81,11 +81,23 @@ const compared = (arr1,arr2)=>{
 	return !isEqual.include(false)
 }
 
+const obj = ({ a: 1, b: 2 })//=> [['a', 1], ['b', 2]]
 
+const makepairs = (object)=> Object.entries(object)
 
+const makePairs2 = (object) => Object.keys(object).map((el) => [el, object[el]]);
 
+const makePairs3 = (object) => {
+  const result = [];
 
+  for (const prop in object) {
+    if (object.hasOwnProperty(prop)) {
+      result.push([prop, object[prop]]);
+    }
+  }
 
+  return result;
+};
 
 
 
