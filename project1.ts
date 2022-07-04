@@ -54,7 +54,14 @@ app.listen(port, () => {
 	console.log(`started at $(port)`);
 })
 
-
+const arr = [1,5,4,3]
+const reverse = (arr)=>{
+	const reversedArr = []
+	for(let i = 0; i<arr.length;i++){
+		reversedArr.push(arr[i])
+	}
+	return reversedArr
+}
 
 
 
