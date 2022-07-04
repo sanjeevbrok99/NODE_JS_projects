@@ -98,8 +98,20 @@ const makePairs3 = (object) => {
 
   return result;
 };
-
-
+let value = [5, 3, 9, 10, 50, 100];
+    let i;
+    for(i = 1; i <= 4; i++) {
+      value[i] = 15;
+    } 
+    console.log(value);
+let value1 = [];
+  
+    // An empty array is taken
+    let  length = 5;
+    for(let i = 0; i < length; i++) {
+      value1.push(10);
+    } 
+    console.log(value1);
 
 
 
