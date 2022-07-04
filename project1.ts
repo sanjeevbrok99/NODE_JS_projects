@@ -62,6 +62,34 @@ const reverse = (arr)=>{
 	}
 	return reversedArr
 }
+const Arr = [0, 1, false, 2, undefined, '', 3, null]
+const compact = (Arr)=> Arr.filter((el)=>el);
+
+const array = [1, 2, 3, 1, 2]
+
+const unique = (array)=> array.filter((element,id)=>array.indexOf((element === id)))
+
+const arr1 = [1,2,3]
+const arr2 = [1,2,3]
+
+const compared = (arr1,arr2)=>{
+
+	if(arr1.length != arr2.length){
+		return false
+	}
+	const isEqual = arr1.map((el,id)=>arr2[id]===el);
+	return !isEqual.include(false)
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
