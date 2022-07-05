@@ -76,9 +76,24 @@ var arr = ["apple", "mango", "apple",
 const reoveduplicate = (arr)=> arr.filter((item,id)=>arr.indexOf(item)===id)
 
 
+function removeDuplicates(arr) {
+        var unique = [];
+        arr.forEach(element => {
+            if (!unique.includes(element)) {
+                unique.push(element);
+            }
+        });
+        return unique;
+    }
+ 
+    console.log(removeDuplicates(arr));
 
+var arr1 = [4, 8, 7, 13, 12];
+var sum = 0;
+  
+    arr1.forEach(x=>sum+=x);
 
-
+    
 
 
 

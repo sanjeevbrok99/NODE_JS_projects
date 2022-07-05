@@ -78,9 +78,13 @@ async function sum(x,y){
 
 add(10,20)
 
+const arr = [5, 6, 7, 8, 9, 2, 6, 3, -4, 0, -9, -6];
 
+const filteredArr = [];
 
+const filter = arr.filter((element)=>element<0)
 
+console.log(filter)
 
 
 

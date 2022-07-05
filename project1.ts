@@ -114,9 +114,12 @@ let value1 = [];
     console.log(value1);
 
 
+let array3 = [1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 8];
+  console.log("Before filtering non unique values: " + array);
 
-
-
+const Unique = array3.filter((value,index)=>{
+	return array3.indexOf(value)===array3.lastIndexOf(value)
+})
 
 
 
