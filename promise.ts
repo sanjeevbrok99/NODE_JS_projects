@@ -86,7 +86,8 @@ const filter = arr.filter((element)=>element<0)
 
 console.log(filter)
 
-
+const numbers = [56,43,56];
+const result = numbers.every((el)=>el<100)
 
 
 

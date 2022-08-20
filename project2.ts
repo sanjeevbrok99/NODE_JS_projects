@@ -110,13 +110,17 @@ var sum = 0;
 
 
 
+var input = [97, 43, 23, 12, 0, 1, 23, 43, 90, 1] 
+//output = [0, 1, 12, 23, 43, 90, 97]
 
 
 
+const removeduplicate = input.filter((c,index)=>{
+    return input.indexOf(c) !== index;
+})
 
-
-
-
+const output = removeduplicate.sort();
+console.log(output);
 
 
 
